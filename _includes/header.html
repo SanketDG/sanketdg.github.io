@@ -2,11 +2,11 @@
     <h1>
         {{ site.title}}
 
-        {% if site.twitter_username %}
-            <a href="https://twitter.com/{{ site.github_username }}" class="icon fa fa-github"></a>
-        {% endif %}
         {% if site.github_username %}
-            <a href="https://github.com/{{ site.twitter_username }}" class="icon fa fa-twitter"></a>
+            <a href="https://github.com/{{ site.github_username }}" class="icon fa fa-github"></a>
+        {% endif %}
+        {% if site.twitter_username %}
+            <a href="https://twitter.com/{{ site.twitter_username }}" class="icon fa fa-twitter"></a>
         {% endif %}
 
     </h1>
